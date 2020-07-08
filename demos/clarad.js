@@ -14,8 +14,6 @@ axios.get('https://api.github.com/users/gwenf/repos')
 async function axiosAsync () {
     // await response of fetch call
     let response = await axios.get('https://api.github.com/users/gwenf/repos');
-    // only proceed once promise is resolved
-    let data = await response;
     // only proceed once second promise is resolved
     return data;
   }
